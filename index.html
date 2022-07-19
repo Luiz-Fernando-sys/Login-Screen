@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login interativa</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script  src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+    <div id="lado">
+        <div class="lado_direito"></div>
+        <div class="lado_esquerdo"></div>
+    </div>
+
+    <div id="slideBox">
+        <div class="topLayer">
+            <div class="esquerdo"> <!--Formulário da parte da esquerda-->
+                <div class="conteudo_form conteudo_form1">
+                    <h2>Inscrever-se</h2>
+                    <form method="post" onsubmit="return false;">
+                        <div class="entrada_de_dados">
+                            <input type="text" placeholder="Nome" />
+                            <input type="text" placeholder="Sobrenome" />
+                            <input type="email" placeholder="email" />
+                            <input type="telephone" placeholder="(xx) x.xxxx-xxxx" />
+                            <input type="password" placeholder="Crie sua senha" />
+                            <input type="password" placeholder="Digite a senha novamente" />
+                        </div>
+                    </form>
+                    <button id="bot_login_esq" class="off">Login</button>
+                    <button>Cadastrar</button>
+                </div>
+            </div>
+            <div class="direito"> <!--Formulário da parte da direita-->
+                <div class="conteudo_form">
+                    <h2>Login</h2>
+                    <form method="post" onsubmit="return false;">
+                        <div class="entrada_de_dados">
+                            <input type="email" placeholder="E-mail" />
+                            <input type="password" placeholder="Senha" />
+                        </div>
+                        <button id="bot_cad_right" class="off">Cadastrar</button>
+                        <button id="login" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
